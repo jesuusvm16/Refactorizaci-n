@@ -32,7 +32,7 @@ public class Prueba {
     }
 //metodo que borra el elemento de la posicion posicion desplazando a la izquierda todos los elementos
 
-    public void bo(int[] v) {
+    public void borrar(int[] v) {
         int p = 1, i;
 //mostramos su contenido
 //Mostramos los elementos del array
