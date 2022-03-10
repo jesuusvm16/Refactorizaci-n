@@ -21,7 +21,9 @@ public class Prueba {
         System.out.println("}");
 //Modificamos el array
         if (posicion < vector.length) {
-            ModificaElemento(vector, posicion);
+//mostramos su contenido
+            System.out.println("Elemento a modificar=" + vector[posicion]);
+            vector[posicion] = this.valor;
         }
 //Mostramos los elementos del array
         System.out.print("v={");
@@ -83,11 +85,4 @@ public class Prueba {
         System.out.println("}");
     }
 
-
-
-    void ModificaElemento(int[] v, int p) {
-//mostramos su contenido
-        System.out.println("Elemento a modificar=" + v[p]);
-        v[p] = this.valor;
-    }
 }
