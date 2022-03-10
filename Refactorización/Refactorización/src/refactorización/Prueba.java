@@ -1,7 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
+ * To change this license header, choose License Headers insertar Project Properties.
  * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * and open the template insertar the editor.
  */
 package refactorización;
 
@@ -55,7 +55,7 @@ public class Prueba {
 //metodo que inserta un elemento en la posicion posicion desplazando a la derecha todos los
     //elementos
 
-    public void in(int[] v) {
+    public void insertar(int[] v) {
         int p = 1, i;
 //mostramos su contenido
 //Mostramos los elementos del array
