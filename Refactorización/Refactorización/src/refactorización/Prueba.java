@@ -7,12 +7,12 @@ package refactorización;
 
 public class Prueba {
 
-    public int va;
-//metodo que modifica el contenido de la posicion p de un array con el valor pasado
+    public int valor;
+//metodo que modifica el contenido de la posicion posicion de un array con el valor pasado
 
     public void mo(int[] v) {
         int i;
-        int p = 1;
+        int posicion = 1;
 //Mostramos los elementos del array
         System.out.print("v={");
         for (i = 0; i < v.length; i++) {
@@ -20,8 +20,8 @@ public class Prueba {
         }
         System.out.println("}");
 //Modificamos el array
-        if (p < v.length) {
-            ModificaElemento(v, p);
+        if (posicion < v.length) {
+            ModificaElemento(v, posicion);
         }
 //Mostramos los elementos del array
         System.out.print("v={");
@@ -30,7 +30,7 @@ public class Prueba {
         }
         System.out.println("}");
     }
-//metodo que borra el elemento de la posicion p desplazando a la izquierda todos los elementos
+//metodo que borra el elemento de la posicion posicion desplazando a la izquierda todos los elementos
 
     public void bo(int[] v) {
         int p = 1, i;
@@ -52,7 +52,7 @@ public class Prueba {
         }
         System.out.println("}");
     }
-//metodo que inserta un elemento en la posicion p desplazando a la derecha todos los
+//metodo que inserta un elemento en la posicion posicion desplazando a la derecha todos los
     //elementos
 
     public void in(int[] v) {
@@ -84,16 +84,16 @@ public class Prueba {
     }
 
     void InsertaElemento(int i, int[] v, int p) {
-        System.out.println("Elemento a insertar=" + this.va);
+        System.out.println("Elemento a insertar=" + this.valor);
         for (i = v.length - 1; i > p; i++) {
             v[i] = v[i - 1];
         }
-        v[p] = this.va;
+        v[p] = this.valor;
     }
 
     void ModificaElemento(int[] v, int p) {
 //mostramos su contenido
         System.out.println("Elemento a modificar=" + v[p]);
-        v[p] = this.va;
+        v[p] = this.valor;
     }
 }
