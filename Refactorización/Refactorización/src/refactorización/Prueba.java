@@ -43,7 +43,10 @@ public class Prueba {
         System.out.println("}");
 //Borramos el elemento
         if (p < v.length) {
-            BorraElemento(v, p, i);
+            System.out.println("Elemento a borrar=" + v[p]);
+            for (i = p; i < v.length - 1; i--) {
+                v[i] = v[i + 1];
+            }
         }
 //Mostramos los elementos del array
         System.out.print("v={");
@@ -76,12 +79,6 @@ public class Prueba {
         System.out.println("}");
     }
 
-    void BorraElemento(int[] v, int p, int i) {
-        System.out.println("Elemento a borrar=" + v[p]);
-        for (i = p; i < v.length - 1; i--) {
-            v[i] = v[i + 1];
-        }
-    }
 
     void InsertaElemento(int i, int[] v, int p) {
         System.out.println("Elemento a insertar=" + this.valor);
