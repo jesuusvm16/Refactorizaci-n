@@ -69,7 +69,11 @@ public class Prueba {
         System.out.println("}");
 //Borramos el elemento
         if (p < v.length) {
-            InsertaElemento(i, v, p);
+            System.out.println("Elemento a insertar=" + this.valor);
+            for (i = v.length - 1; i > p; i++) {
+                v[i] = v[i - 1];
+            }
+            v[p] = this.valor;
         }
 //Mostramos los elementos del array
         System.out.print("v={");
@@ -80,13 +84,6 @@ public class Prueba {
     }
 
 
-    void InsertaElemento(int i, int[] v, int p) {
-        System.out.println("Elemento a insertar=" + this.valor);
-        for (i = v.length - 1; i > p; i++) {
-            v[i] = v[i - 1];
-        }
-        v[p] = this.valor;
-    }
 
     void ModificaElemento(int[] v, int p) {
 //mostramos su contenido
