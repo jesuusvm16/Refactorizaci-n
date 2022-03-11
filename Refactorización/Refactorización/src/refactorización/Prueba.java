@@ -10,9 +10,8 @@ public class Prueba {
     public int valor;
 //metodo que modifica el contenido de la posicion posicion de un array con el valor pasado
 
-    public void modificar(int[] vector, int longitudActual) {
+    public void modificar(int[] vector, int longitudActual, int posicion) {
         int i;
-        int posicion = 1;
         int LongitudActual=0;
 //Mostramos los elementos del array
         System.out.print("v={");
