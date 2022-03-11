@@ -18,7 +18,7 @@ public class Refactorización {
         v[1] = 4;
         v[2] = 6;
         v[3] = 8;
-        Prueba p = new Prueba();
+        CambiaLongitud p = new CambiaLongitud();
         p.setValor(10);
         p.modificar(v, 0, 1);
         p.borrar(v, 0);
