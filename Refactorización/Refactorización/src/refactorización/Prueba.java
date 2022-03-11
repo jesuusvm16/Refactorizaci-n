@@ -39,7 +39,7 @@ public class Prueba {
         int p = 1, i = 0;
 //mostramos su contenido
 //Mostramos los elementos del array
-        Visualizar(i, v);
+        Visualizar(v);
 //Borramos el elemento
         if (p < Longitud) {
             System.out.println("Elemento a borrar=" + v[p]);
@@ -48,11 +48,12 @@ public class Prueba {
                 v[i] = v[i + 1];
             }
         }
-        Visualizar(i, v);
+        Visualizar(v);
     }
 
-    public void Visualizar(int i, int[] v) {
+    public void Visualizar(int[] v) {
         //Mostramos los elementos del array
+        int i;
         System.out.print("v={");
         for (i = 0; i < Longitud; i++) {
             System.out.print(v[i] + ",");
