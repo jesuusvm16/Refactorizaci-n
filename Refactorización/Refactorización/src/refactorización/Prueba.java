@@ -36,14 +36,10 @@ public class Prueba {
 //metodo que borra el elemento de la posicion posicion desplazando a la izquierda todos los elementos
 
     public void borrar(int[] v, int LongitudActual) {
-        int p = 1, i;
+        int p = 1, i = 0;
 //mostramos su contenido
 //Mostramos los elementos del array
-        System.out.print("v={");
-        for (i = 0; i < Longitud; i++) {
-            System.out.print(v[i] + ",");
-        }
-        System.out.println("}");
+        Visualizar(i, v);
 //Borramos el elemento
         if (p < Longitud) {
             System.out.println("Elemento a borrar=" + v[p]);
@@ -52,7 +48,11 @@ public class Prueba {
                 v[i] = v[i + 1];
             }
         }
-//Mostramos los elementos del array
+        Visualizar(i, v);
+    }
+
+    public void Visualizar(int i, int[] v) {
+        //Mostramos los elementos del array
         System.out.print("v={");
         for (i = 0; i < Longitud; i++) {
             System.out.print(v[i] + ",");
@@ -75,7 +75,7 @@ public class Prueba {
 //Borramos el elemento
         if (p < v.length) {
             System.out.println("Elemento a insertar=" + this.valor);
-            for (i = v.length - 1; i > p; i++) {
+            for (i = v.length - 1; i > p; i--) {
                 v[i] = v[i - 1];
             }
             v[p] = this.valor;
