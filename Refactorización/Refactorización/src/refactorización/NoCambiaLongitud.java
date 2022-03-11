@@ -16,6 +16,7 @@ public class NoCambiaLongitud {
         //Mostramos los elementos del array
         int i;
         System.out.print("v={");
+        int Longitud = 0;
         for (i = 0; i < Longitud; i++) {
             System.out.print(v[i] + ",");
         }
@@ -23,4 +24,4 @@ public class NoCambiaLongitud {
     }
 //metodo que inserta un elemento en la posicion posicion desplazando a la derecha todos los
     //elementos
-   
+}
