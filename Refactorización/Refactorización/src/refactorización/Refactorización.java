@@ -19,7 +19,7 @@ public class Refactorización {
         v[2] = 6;
         v[3] = 8;
         Prueba p = new Prueba();
-        p.valor = 10;
+        p.setValor(10);
         p.modificar(v, 0, 1);
         p.borrar(v, 0);
         p.insertar(v, 0);
